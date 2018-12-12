@@ -23,4 +23,4 @@ RUN apt-get -y clean;apt-get -y autoclean
 
 RUN wget http://master.qt.io/archive/online_installers/3.0/qt-unified-linux-x64-3.0.5-online.run; chmod +x qt-unified-linux-x64-3.0.5-online.run
 
-RUN ./qt-unified-linux-x64-3.0.5-online.run --verbose --platform minimal --script qtni5101.qs; rm qt-unified-linux-x64-3.0.5-online.run;rm -rf /opt/qt/Docs;rm -rf /opt/qt/Examples;rm -rf /opt/qt/Tools;rm -f /opt/qt/5.10.1/gcc_64/lib/*.debug
+RUN ./qt-unified-linux-x64-3.0.5-online.run --verbose --platform minimal --script /qtni5101.qs; rm qt-unified-linux-x64-3.0.5-online.run;rm -rf /opt/qt/Docs;rm -rf /opt/qt/Examples;rm -rf /opt/qt/Tools;rm -f /opt/qt/5.10.1/gcc_64/lib/*.debug
